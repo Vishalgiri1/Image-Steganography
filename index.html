@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Steganography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"
+        integrity="sha512-2r+xZ/Dm8+HI0I8dsj1Jlfchv4O3DGfWbqRalmSGtgdbVQrZyGRqHp9ek8GKk1x8w01JsmDZRrJZ4DzgXkAU+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="display-background">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <h1 class="heading">Encode</h1>
+                <div class="line"></div>
+                <br>
+                <br>
+                <br>
+        
+        <div class="encode-image">
+                <div class="image-uploader">
+                <div id="image-display"></div>
+                <br><br>
+        
+                    <label class="custom-file-upload" for="encodeimage1">
+                        <input type="file" id="encodeimage1" accept="image/jpg image/png image/jpeg" />
+                        Choose a file
+                      </label>
+                    </div>
+            
+                      <br><br>
+
+                <div class="inputBox">
+                    
+                    <textarea rows="7" id="secretText" placeholder="Write here...." required="text"></textarea>
+                    <span>Secret Text :</span>
+                  </div>
+                    
+        </div>
+        </div>
+        <br><br>
+        
+        </div> 
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button value="Encode" class="button-ED" type="button" id="encodebtn">Encode</button>
+                </div>
+        </div>
+
+
+        <div class="container">
+
+            <div class="row">
+    
+                <div class="container">
+                    <h1 class="heading">Decode</h1>
+                    <div class="line"></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+            
+            <div class="encode-image">
+                    <div class="image-uploader">
+                    <div id="image-display-Original"></div>
+                    <br><br>
+            
+                        <label class="custom-file-upload" for="decodeimage1">
+                            <input type="file" id="decodeimage1" accept="image/jpg image/png image/jpeg" />
+                            Choose a file
+                          </label>
+                        </div>
+
+                        <div class="image-uploader">
+                            <div id="image-display-Encoded"></div>
+                            <br><br>
+                    
+                                <label class="custom-file-upload" for="decodeimage2">
+                                    <input type="file" id="decodeimage2" accept="image/jpg image/png image/jpeg" />
+                                    Choose a file
+                                  </label>
+                                </div>
+                
+                          <br><br>
+                        
+            </div>
+            </div>
+            <br><br>
+            
+            </div> 
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <button value="Decode" class="button-ED" type="button" id="decodebtn">Decode</button>
+                    </div>
+            </div>
+            <br><br>
+            
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="inputBox">
+                    <textarea name="Decode Message" rows="7" id="secretText1" placeholder="Decoded Message....."></textarea>
+                    <span>Secret Text :</span>
+                  </div>
+                </div>
+            
+                <div id="canvasbox"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script defer src="./script.js">
+
+
+
+    </script>
+</body>
+
+</html>

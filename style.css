@@ -1,0 +1,249 @@
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.col-md-4 {
+    align-items: center;
+
+}
+
+
+.button-ED {
+    padding: 17px 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgba(6, 5, 5, 0.5) 0 0 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .button-ED:hover {
+    letter-spacing: 3px;
+    background-color: hsl(105, 80%, 48%);
+    color: hsl(0, 0%, 0%);
+    box-shadow: rgb(102, 220, 24) 0px 7px 29px 0px;
+  }
+  
+  .button-ED:active {
+    letter-spacing: 3px;
+    background-color: hsl(101, 80%, 48%);
+    color: hsl(0, 0%, 0%);
+    box-shadow: rgb(109, 220, 24) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+
+  /* From Uiverse.io by csemszepp */ 
+.display-background {
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    
+    
+    
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+
+.heading {
+    font-size: 50px;
+    color: aliceblue;
+    position: relative;
+    
+    
+}
+
+.line {
+    border-bottom: 5px solid white;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+#image-display {
+  
+  width: 400px;
+  height: 300px;
+  border: 2px solid rgb(255, 253, 253);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(1.png);
+  background-color: azure;
+
+}
+
+#image-display-Original {
+  
+  width: 400px;
+  height: 300px;
+  border: 2px solid rgb(255, 253, 253);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: url(1.png);
+  background-color: azure;
+  font-size: 30px;
+  align-items: last baseline;
+  
+
+}
+
+#image-display-Encoded {
+  
+  width: 400px;
+  height: 300px;
+  border: 2px solid rgb(255, 253, 253);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  background-image: url(1.png);
+  background-color: azure;
+ 
+
+}
+
+
+.encode-image {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ;
+  
+
+}
+
+.image-uploader {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.custom-file-upload {
+  font-size: 1.1em;
+  color: #000000;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background var(--transition) ease;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 35px;
+  position: end;
+}
+
+.custom-file-upload:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* From Uiverse.io by saidbl1 */ 
+.inputBox {
+  position: relative;
+  
+
+}
+
+.inputBox input {
+  padding: 150px 120px;
+  outline: black;
+  background: #fffcfc;
+  border-radius: 5px;
+  color: #000000;
+  border: 1px solid#000000;
+  font-size: 2em;
+  
+  
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  transform: translateX(20px) translateY(-18px);
+  padding: 0 12px 7px 11px;
+  border-radius: 4px;
+  background: #ffffff;
+  letter-spacing: 1px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+
+.inputBox textarea {
+  padding: 50px 40px;
+  outline: black;
+  background: #fffcfc;
+  border-radius: 10px;
+  color: #000000;
+  border: 2px solid#000000;
+  font-size: 1.5em;
+  width: 600px;
+
+  
+
+}
